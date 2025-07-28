@@ -7,9 +7,9 @@ import (
 
 type Location struct {
 	gorm.Model
-	Location_Name	string		`gorm:"type:varchar(100);not null" json:"location_name"`
-	Address			string		`gorm:"type:varchar(255);not null" json:"address"`
+	LocationName	string		`gorm:"type:varchar(100);not null" json:"location_name"`
+	Address			string		`gorm:"type:text;not null" json:"address"`
 	City			string		`gorm:"type:varchar(50);not null" json:"city"`		
 	Province		string		`gorm:"type:varchar(50);not null" json:"province"`	 
-	Province_Code	int			`gorm:"type:int;not null" json:"province_code"`
+	ProvinceCode	int			`gorm:"type:int;not null" json:"province_code"`
 }

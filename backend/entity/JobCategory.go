@@ -4,5 +4,5 @@ import "gorm.io/gorm"
 
 type JobCategory struct {
 	gorm.Model
-	JobCategory_Name	string		`gorm:"type:varchar(50);not null" json:"jobcategory_name"`
+	JobCategoryName	string		`gorm:"type:varchar(50);not null" json:"jobcategory_name"`
 }
